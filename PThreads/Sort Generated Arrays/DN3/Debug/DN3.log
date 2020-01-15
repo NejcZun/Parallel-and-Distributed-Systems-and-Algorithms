@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\RageM\source\repos\DN3\DN3\main.c(64,18): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\RageM\source\repos\DN3\DN3\main.c(59): warning C4716: 'threadFunction': must return a value
+  DN3.vcxproj -> C:\Users\RageM\source\repos\DN3\Debug\DN3.exe

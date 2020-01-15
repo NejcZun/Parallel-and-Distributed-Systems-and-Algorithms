@@ -1,0 +1,8 @@
+﻿  main.c
+C:\Users\RageM\source\repos\DN4\DN4\main.c(21,60): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\RageM\source\repos\DN4\DN4\main.c(57,30): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 8 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  DN4.vcxproj -> C:\Users\RageM\source\repos\DN4\Release\DN4.exe

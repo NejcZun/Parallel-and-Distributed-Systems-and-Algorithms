@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\RageM\source\repos\DN4\DN4\main.c(20,60): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+  DN4.vcxproj -> C:\Users\RageM\source\repos\DN4\Debug\DN4.exe
