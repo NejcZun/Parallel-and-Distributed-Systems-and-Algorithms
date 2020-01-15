@@ -1,0 +1,8 @@
+﻿  main.cpp
+C:\Users\RageM\source\repos\Vaja8\Vaja8\main.cpp(22,62): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\RageM\source\repos\Vaja8\Vaja8\main.cpp(28,63): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\RageM\source\repos\Vaja8\Vaja8\main.cpp(37,73): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\RageM\source\repos\Vaja8\Vaja8\main.cpp(10,12): warning C4101: 'i': unreferenced local variable
+C:\Users\RageM\source\repos\Vaja8\Vaja8\main.cpp(9,6): warning C4101: 'partner': unreferenced local variable
+C:\Users\RageM\source\repos\Vaja8\Vaja8\main.cpp(10,15): warning C4101: 't': unreferenced local variable
+  Vaja8.vcxproj -> C:\Users\RageM\source\repos\Vaja8\x64\Debug\Vaja8.exe

@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\RageM\source\repos\Vaja9\Vaja9\main.cpp(31,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\RageM\source\repos\Vaja9\Vaja9\main.cpp(45,30): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Vaja9.vcxproj -> C:\Users\RageM\source\repos\Vaja9\x64\Debug\Vaja9.exe
