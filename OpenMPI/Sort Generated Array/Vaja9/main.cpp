@@ -5,24 +5,11 @@
 #include <time.h>
 #include <math.h>
 
-#define N 1000
+#define N 1000000
 
-int compare(const void* first, const void* second){
+int compare(const void* first, const void* second) {
 	return *(int*)first - *(int*)second;
 }
-void merge(int ar1[], int ar2[], int m, int n){
-	for (int i = n - 1; i >= 0; i--){
-		int j, last = ar1[m - 1];
-		for (j = m - 2; j >= 0 && ar1[j] > ar2[i]; j--)
-			ar1[j + 1] = ar1[j];
-		if (j != m - 2 || last > ar2[i])
-		{
-			ar1[j + 1] = ar2[i];
-			ar2[i] = last;
-		}
-	}
-}
-
 int main(int argc, char** argv) {
 	double t1, t2, result;
 	int* polje = (int*) malloc(N * sizeof(int));
@@ -42,8 +29,9 @@ int main(int argc, char** argv) {
 
 	if (world_rank == 0) t1 = MPI_Wtime();
 	for (int i = 0; i < world_size; i++) {
-		distributedCount[i] = round(N / (world_size * 1.0f));
+		distributedCount[i] = ceil(N / (world_size * 1.0f));
 		displacement[i] = i * distributedCount[i];
+		temp_disp[i] = displacement[i];
 	}
 	if ((N % world_size) != 0) {
 		distributedCount[world_size-1] = N % distributedCount[0];
@@ -61,14 +49,14 @@ int main(int argc, char** argv) {
 
 	if (world_rank == 0) {
 
-		temp_disp = displacement;
 		sorted = (int*)malloc(N * sizeof(int));
-
+		
 		for (int i = 0; i < N; i++) {
 			int min = RAND_MAX;
-			int izbran;
+			int izbran=0;
 			for (int j = 0; j < world_size; j++) {
-				if (temp_disp[j] < temp_disp[j] + distributedCount[j]) {
+				if (temp_disp[j] < displacement[j] + distributedCount[j]) {
+					//printf("Disp: %d < %d\n", temp_disp[j], displacement[j] + distributedCount[j]);
 					if (min > semi_sorted[temp_disp[j]]) {
 						min = semi_sorted[temp_disp[j]];
 						izbran = j;
@@ -78,10 +66,11 @@ int main(int argc, char** argv) {
 			sorted[i] = min;
 			temp_disp[izbran]++;
 		}
+		
 			
-		//qsort(sorted, world_size, sizeof(int), compare);
 		printf("Sortiran array:\n");
 		t2 = MPI_Wtime();
+		//qsort(sorted, N, sizeof(int), compare);
 		result = t2 - t1;
 		for (int i = 0; i < N; i++) printf("%d ", sorted[i]);
 		free(sorted);
