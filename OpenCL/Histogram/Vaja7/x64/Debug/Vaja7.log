@@ -1,0 +1,12 @@
+﻿  main.cpp
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(164,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(164,10): message : consider using '%zd' in the format string
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(313,10): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(313,10): message : consider using '%zd' in the format string
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(104,12): warning C4101: 'buf_len': unreferenced local variable
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(103,9): warning C4101: 'buf': unreferenced local variable
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(78,7): warning C4101: 'i': unreferenced local variable
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(255,12): warning C4101: 'buf_len': unreferenced local variable
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(254,9): warning C4101: 'buf': unreferenced local variable
+C:\Users\RageM\source\repos\Vaja7\Vaja7\main.cpp(229,7): warning C4101: 'i': unreferenced local variable
+  Vaja7.vcxproj -> C:\Users\RageM\source\repos\Vaja7\x64\Debug\Vaja7.exe

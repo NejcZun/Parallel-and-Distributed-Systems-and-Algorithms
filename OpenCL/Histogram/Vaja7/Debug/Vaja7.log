@@ -1,0 +1,11 @@
+﻿  main.cpp
+main.obj : error LNK2019: unresolved external symbol __imp__FreeImage_Unload@4 referenced in function _main
+main.obj : error LNK2019: unresolved external symbol __imp__FreeImage_Load@12 referenced in function _main
+main.obj : error LNK2019: unresolved external symbol __imp__FreeImage_GetWidth@4 referenced in function _main
+main.obj : error LNK2019: unresolved external symbol __imp__FreeImage_GetHeight@4 referenced in function _main
+main.obj : error LNK2019: unresolved external symbol __imp__FreeImage_GetPitch@4 referenced in function _main
+main.obj : error LNK2019: unresolved external symbol __imp__FreeImage_ConvertToGreyscale@4 referenced in function _main
+main.obj : error LNK2019: unresolved external symbol __imp__FreeImage_ConvertToRawBits@32 referenced in function _main
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\lib\x64\OpenCL.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+FreeImage.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\RageM\source\repos\Vaja7\Debug\Vaja7.exe : fatal error LNK1120: 7 unresolved externals

@@ -1,0 +1,7 @@
+﻿  main.cpp
+C:\Users\RageM\source\repos\Vaja6-Part2\Vaja6-Part2\main.cpp(110,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Users\RageM\source\repos\Vaja6-Part2\Vaja6-Part2\main.cpp(110,9): message : consider using '%zd' in the format string
+C:\Users\RageM\source\repos\Vaja6-Part2\Vaja6-Part2\main.cpp(52,9): warning C4101: 'buf_len': unreferenced local variable
+C:\Users\RageM\source\repos\Vaja6-Part2\Vaja6-Part2\main.cpp(51,8): warning C4101: 'buf': unreferenced local variable
+C:\Users\RageM\source\repos\Vaja6-Part2\Vaja6-Part2\main.cpp(19,6): warning C4101: 'i': unreferenced local variable
+  Vaja6-Part2.vcxproj -> C:\Users\RageM\source\repos\Vaja6-Part2\x64\Debug\Vaja6-Part2.exe
