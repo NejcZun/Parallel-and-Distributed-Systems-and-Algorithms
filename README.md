@@ -7,7 +7,7 @@
 
 ### OpenMP:
 - Friendly Numbers ([click here for more info](https://en.wikipedia.org/wiki/Friendly_number))
-- Philosopher Problem ([click here for more info](https://en.wikipedia.org/wiki/Dining_philosophers_problem))
+- Dining Philosopher Problem ([click here for more info](https://en.wikipedia.org/wiki/Dining_philosophers_problem))
 
 ### OpenCL:
 - Histogram ([click here for more info](https://en.wikipedia.org/wiki/Image_histogram))
