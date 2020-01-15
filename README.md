@@ -1,5 +1,5 @@
 # Parallel-and-Distributed-Systems-and-Algorithms
-##Algorithms run in different parallel environments
+## Algorithms run in different parallel environments
 
 ### Pthreads:
 - Amicable numbers ([click here for more info](https://en.wikipedia.org/wiki/Amicable_numbers))
